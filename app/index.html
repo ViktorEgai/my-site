@@ -13,49 +13,58 @@
     <header class="header">
       <div class="container">
         <nav class="header__nav nav">
-          <ul class="nav__list d-flex justify-content-start m-0 p-0">
+          <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">что я умею</a>
+              <a class="nav__link" href="#skills">что я умею</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">портфолио</a>
+              <a class="nav__link" href="#portfolio">портфолио</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">где учился</a>
+              <a class="nav__link" href="#study">где учился</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#"> контакты</a>
+              <a class="nav__link" href="#contacts"> контакты</a>
             </li>
           </ul>
         </nav>
+        <button class="header__button header__button--mobile">
+          <span class="header__button-line"></span>
+          <span class="header__button-line"></span>
+          <span class="header__button-line"></span>
+        </button>
       </div>
       <!-- /.container -->
     </header>
     <main>
       <section class="main">
-        <div class="container d-flex justify-content-around flex-md-row flex-sm-column-reverse">
-          <div class="main__info col-md-6 col-12 d-flex flex-column justify-content-end">
-            <h1 class="main__title">
-              Привет, мой дорогой посетиль. Меня зовут Виктор Егай. <br />
-              Я - верстальщик сайтов.
-            </h1>
-            <p class="main__text">
-              Эта страница создана специально для демонстрации моих навыков, проделанных работ и их описание, а также контактная информация для связи
-              со мной.
-            </p>
+        <div class="container">
+          <div class="main__wrapper d-flex justify-content-md-between flex-md-row flex-column-reverse">
+            <div class="main__info col-md-6 col-12 d-flex flex-column justify-content-md-end">
+              <h1 class="main__title">
+                Привет, мой дорогой посетиль. <br />
+                Меня зовут Виктор Егай. <br />
+                Я - верстальщик сайтов.
+              </h1>
+              <p class="main__text">
+                Эта страница создана специально для демонстрации моих навыков, проделанных работ и их описание, а также контактная информация для
+                связи со мной.
+              </p>
+            </div>
+            <!-- /.main__info -->
+            <div class="main__image col-md-6 col-12">
+              <img class="main__image-item" src="img/avatar.jpg" alt="Егай Виктор" />
+            </div>
+            <!-- /.main__image -->
           </div>
-          <!-- /.main__info -->
-          <div class="main__image col-md-6 col-12">
-            <img src="img/avatar.jpg" alt="Егай Виктор" class="main__image-item" />
-          </div>
-          <!-- /.main__image -->
+          <!-- /.main__wrapper -->
         </div>
         <!-- /.container -->
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="container">
           <h2 class="skills__title underline title">Что я умею</h2>
-          <div class="skills__wrapper d-flex flex-sm-column flex-md-row">
+          <div class="skills__wrapper d-flex flex-column flex-md-row">
             <div class="skills__block col-md-6 col-12">
               <h3 class="skills__subtitle">Верстка</h3>
               <p class="skills__text">
@@ -108,7 +117,7 @@
         </div>
         <!-- /.container -->
       </section>
-      <section class="study">
+      <section class="study" id="study">
         <div class="container">
           <h2 class="study__title underline title">Где учился</h2>
           <div class="study__wrapper row justify-content-between">
@@ -132,7 +141,7 @@
               </p>
             </div>
             <!-- /.study__info -->
-            <div class="study__image col-12 col-md-5">
+            <div class="study__image col-12 col-md-6 col-lg-5">
               <img class="study__image-item" src="img/sertificate.png" alt="сертификат за первое место" />
             </div>
             <!-- /.study__image -->
@@ -141,20 +150,117 @@
         </div>
         <!-- /.container -->
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="portfolio__title title underline">Мои работы</h2>
           <!-- Slider main container -->
-          <div class="swiper-container">
+          <div class="portfolio__swiper swiper-container col-12">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">Slide 1</div>
+              <div class="portfolio__slide portfolio__slide--active swiper-slide" data-target="#content-1">
+                <img class="portfolio__slide-image" src="img/slide-small-1.jpg" alt="Universal" />
+              </div>
+              <!-- /.portfolio__slide -->
+              <div class="portfolio__slide swiper-slide" data-target="#content-2">
+                <img class="portfolio__slide-image" src="img/slide-small-2.jpg" alt="Best Touк Plan" />
+              </div>
             </div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <button class="portfolio__button portfolio__button-prev"></button>
+            <button class="portfolio__button portfolio__button-next"></button>
           </div>
+          <!-- /.swiper__container -->
+          <div class="portfolio__content col-12">
+            <div class="portfolio__content-item portfolio__content-item--active" id="content-1">
+              <img class="portfolio__content-image" src="img/slide-1.jpg" alt="Universal" />
+              <div class="portfolio__content-info row">
+                <div class="portfolio__content-description col-lg-3 col-md-4">
+                  <h3 class="portfolio__content-title">Клиент</h3>
+                  <span class="portfolio__content-text">Дипломный проект</span>
+                  <h3 class="portfolio__content-title">Ссылка</h3>
+                  <a class="portfolio__content-link" href="https://egaiviktor.ru/Universal/" target="_blank">https://egaiviktor.ru/Universal/</a>
+                </div>
+                <!-- /.portfolio__content-description -->
+                <div class="portfolio__content-block col-lg-9 col-md-8">
+                  <h3 class="portfolio__content-title">Описание</h3>
+                  <p class="portfolio__content-text">
+                    Был выполнен дипломный проект сложного уровня со сроком в 9 дней. Проект очень интересный. Адаптивной версии в макете не было.
+                    Весь адаптив был сделан мною самостоятельно. Были использаны все навыки приобретенные на курсе. Сайт полностью рабочий, все формы
+                    работают и проходят валидацию. Имеются ховер эффекты на всех активных элементах и плавная прокрутка по якорным ссылкам.
+                    <br />
+                    Самое сложное для меня был блок с карточками-статьями на главной странице. Нужно было заранее продумать как будут вести себя
+                    элементы на планшетах и мобильных устройствах.
+                  </p>
+                </div>
+                <!-- /.portfolio__content-block -->
+              </div>
+              <!-- /.portfolio__content-info -->
+            </div>
+            <!-- /.portfolio__content-item -->
+            <div class="portfolio__content-item" id="content-2">
+              <img class="portfolio__content-image" src="img/slide-2.jpg" alt="Unirersal" />
+              <div class="portfolio__content-info row">
+                <div class="portfolio__content-description col-md-3">
+                  <h3 class="portfolio__content-title">Клиент</h3>
+                  <span class="portfolio__content-text">Учебный проект </span>
+                  <h3 class="portfolio__content-title">Ссылка</h3>
+                  <a class="portfolio__content-link" href="https://egaiviktor.ru/tour-plan/" target="_blank">https://egaiviktor.ru/tour-plan/</a>
+                </div>
+                <!-- /.portfolio__content-description -->
+                <div class="portfolio__content-block col-md-9">
+                  <h3 class="portfolio__content-title">Описание</h3>
+                  <p class="portfolio__content-text">
+                    Учебный проект от Glo Academy на тему "Бронирование отелей". Данный проект был реализован по видео урокам из курса.
+                    <br />
+                    Во время верстки познакомился с новыми, на тот момент для меня незнакомыми технологиями, например: подключение гео-карты от Google
+                    и Яндекс, система сеток и впервые использовал анимацию на сайте.
+                    <br />
+                    Самым сложным для меня была верстка подвала, так как по ТЗ данная секцию должна быть стилизована с помощью grid-ов.
+                  </p>
+                </div>
+                <!-- /.portfolio__content-block -->
+              </div>
+              <!-- /.portfolio__content-info -->
+            </div>
+            <!-- /.portfolio__content-item -->
+          </div>
+          <!-- /.portfolio__content -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h2 class="contacts__title title underline">Как со мной связаться</h2>
+          <div class="contact__wrapper row">
+            <div class="contacts__info col-12 col-md-6">
+              <h4 class="contacts__name">Телефон</h4>
+              <a class="contacts__link" href="tel:+79954168652">+7 (995) 416-86-52</a>
+            </div>
+            <!-- /.contacts__info -->
+            <div class="contacts__info col-12 col-md-6">
+              <h4 class="contacts__name">Социальные сети</h4>
+              <a class="contacts__social-link" href="https://vk.com/viktor.egai" target="_blank">
+                <img class="contacts__social-icon" src="img/vk.png" alt="Вконтакте" />
+              </a>
+              <a class="contacts__social-link" href="https://www.instagram.com/viktor.egai/" target="_blank">
+                <img class="contacts__social-icon" src="img/inst.png" alt="Instagram" />
+              </a>
+              <a class="contacts__social-link" href="https://wa.me/79954168652" target="_blank">
+                <img class="contacts__social-icon" src="img/whatsapp.png" alt="Whatsapp" />
+              </a>
+              <a class="contacts__social-link" href="https://t.me/bboyviki" target="_blank">
+                <img class="contacts__social-icon" src="img/tg.png" alt="Telegram" />
+              </a>
+            </div>
+            <!-- /.contacts__info -->
+            <div class="contacts__info col-12 col-md-6">
+              <h4 class="contacts__name">Электронная почта</h4>
+              <a class="contacts__link" href="mailto:egai.viktor94@gmail.com">egai.viktor94@gmail.com</a>
+            </div>
+            <!-- /.contacts__info -->
+          </div>
+          <!-- /.contact__wrapper -->
         </div>
         <!-- /.container -->
       </section>
