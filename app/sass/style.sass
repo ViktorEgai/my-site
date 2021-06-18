@@ -1,0 +1,87 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap-grid.min'
+@import '../../node_modules/normalize.css/normalize'
+@import '../../node_modules/swiper/swiper-bundle.min'
+
+$dark: #2E2F41
+img
+  max-width: 100%
+body
+  font-family: 'Nunito', sans-serif
+  color: #2B2A2A
+h1, h2, h3, h4, h5, h6
+  font-family: 'Roboto Slab', serif
+.underline
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    bottom: -10px
+    left: 0
+    width: 90px
+    height: 5px
+    background-color: #00958C
+.title
+  font-weight: 900
+  font-size: 48px
+  line-height: 63px
+.header
+  padding: 30px 0 20px
+  background-color: $dark
+.nav
+  &__item
+    list-style-type: none
+    padding-bottom: 10px
+    border-bottom: 3px solid transparent
+    &:not(:last-child)
+      margin-right: 50px
+  &__link
+    text-decoration: none
+    text-transform: uppercase
+    color: #fff
+    font-weight: 700
+    font-size: 20px
+    line-height: 27px
+.main
+  background-color: $dark
+  padding: 30px 0 80px
+  color: #fff
+
+  &__title
+    font-weight: 900
+    font-size: 35px
+    line-height: 48px
+  &__text
+    font-weight: normal
+    font-size: 24px
+    line-height: 33px
+.skills
+  padding: 30px 0
+  &__title
+    margin-bottom: 60px
+  &__subtitle
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    margin-bottom: 30px
+  &__text
+    font-weight: normal
+    font-size: 18px
+    line-height: 26px
+    margin-bottom: 35px
+    margin-right: 40px
+.study
+  padding: 30px 0 40px
+  &__subtitle
+    font-weight: bold
+    font-size: 37px
+    line-height: 47px
+    margin-bottom: 30px
+  &__text
+    font-weight: normal
+    font-size: 18px
+    line-height: 30px
+    margin-bottom: 40px
+@media  ( min-width: 992px )
+  .nav__item
+    &:hover
+      border-bottom: 3px solid #fff
