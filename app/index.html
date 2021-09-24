@@ -1,271 +1,437 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Roboto+Slab:wght@700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <title>Егай Виктор - верстка сайтов</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#skills">что я умею</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#portfolio">портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#study">где учился</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#contacts"> контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="header__button header__button--mobile">
-          <span class="header__button-line"></span>
-          <span class="header__button-line"></span>
-          <span class="header__button-line"></span>
-        </button>
-      </div>
-      <!-- /.container -->
-    </header>
-    <main>
-      <section class="main">
-        <div class="container">
-          <div class="main__wrapper d-flex justify-content-md-between flex-md-row flex-column-reverse">
-            <div class="main__info col-md-6 col-12 d-flex flex-column justify-content-md-end">
-              <h1 class="main__title">
-                Привет, мой дорогой посетиль. <br />
-                Меня зовут Виктор Егай. <br />
-                Я - верстальщик сайтов.
-              </h1>
-              <p class="main__text">
-                Эта страница создана специально для демонстрации моих навыков, проделанных работ и их описание, а также контактная информация для
-                связи со мной.
-              </p>
-            </div>
-            <!-- /.main__info -->
-            <div class="main__image col-md-6 col-12">
-              <img class="main__image-item" src="img/avatar.jpg" alt="Егай Виктор" />
-            </div>
-            <!-- /.main__image -->
-          </div>
-          <!-- /.main__wrapper -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <section class="skills" id="skills">
-        <div class="container">
-          <h2 class="skills__title underline title">Что я умею</h2>
-          <div class="skills__wrapper d-flex flex-column flex-md-row">
-            <div class="skills__block col-md-6 col-12">
-              <h3 class="skills__subtitle">Верстка</h3>
-              <p class="skills__text">
-                Умею верстать сайты по макету из Figma, Adobe Photoshop, Adobe XD, Adobe Illustrator. <br />
-                Знаю как правильно экспортировать необходимую графику из макета без потери качества, как доставать шрифты и узнавать необходимые
-                отступы для дальнейшего использования в проекте.
-              </p>
-              <h3 class="skills__subtitle">Адаптивная и кроссбраузерная верстка</h3>
-              <p class="skills__text">
-                Я не создаю дизайн сайта, а работаю только с готовыми макетами предоставленные дизайнером, но в случае, когда в макете отсутствует
-                адаптивная версия сайта, могу сделать мобильную и планшетную версию самостоятельно. <br />
-                Всю свою верстку я проверяю на современных доступных мне экранах - большой монитор, ноутбук, планшет и смартфон. Также проверяю
-                верстку на всех популярных браузерах: Google Chrome, Mozilla Firefox, Yandex, Opera.
-              </p>
-              <h3 class="skills__subtitle">Pixel Perfect</h3>
-              <p class="skills__text">
-                Понимаю как важно верстать сайт точно по макету и при необходимости могу сверстать сайт пиксель в пиксель накладывая макет сайта на
-                сверстанную страницу используя расширение Pixel Perfect в браузере.
-              </p>
-              <h3 class="skills__subtitle">Семантика и валидация верстки</h3>
-              <p class="skills__text">
-                Делаю семантически правильную разметку. Знаю в каких случаях использовать , например, заголовки или параграф, а в каких не стоит.
-                Семантика важна, например, для поисковых систем. <br />Также моя верстка успешно проходит валидацию.
-              </p>
-            </div>
-            <!-- /.skills__block -->
-            <div class="skills__block col-md-6 col-12">
-              <h3 class="skills__subtitle">Стили</h3>
-              <p class="skills__text">
-                При написании стилей для сайта я пользуюсь препроцессором SASS. Благодаря ему получается писать стили быстро , качественно и это очень
-                удобно.
-                <br />Для каждого блока я создаю отдельный файл, что позволяет мне легче находить нужные стили для внесения каких либо изменений.
-                <br />Знаю методологию БЭМ, которой использую чаще всего в своей работе. Это удобно и без лишних заморочек. <br />Также при
-                необходимости могу добавить различную анимацию на готовый сайт, чтобы блок с текстом, например, вылетал слева или справа или добавить
-                эффект паралакса на фоновое изображение.
-              </p>
-              <h3 class="skills__subtitle">Хостинг, домен, оптимизация, Git</h3>
-              <p class="skills__text">
-                Умею настраивать хостинг, привязывать домен и регистрировать SSL-сертификат.
-                <br />Готовый сайт проверяю на скорость загрузки с помощью сервиса Google PageSpeed Insights, благодаря которому можно узнать время
-                загрузки и причины замедления загрузки сайта. После выяснения причины - устраняю ее. Например: уменьшаю размеры картинок с помощью
-                Photoshop или сервиса TinyPNG благодаря чему скорость загрузки может значительно увеличиться. <br />Весь свой процесс работы я
-                сохраняю в репозитории на Github. Это очень удобно. Правда я еще не работал в команде поэтому о Git знаю не много: как комитить,
-                клонировать и пушить коммиты на репозиторий.
-              </p>
-            </div>
-            <!-- /.skills__block -->
-          </div>
-          <!-- /.skills__wrapper -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <section class="study" id="study">
-        <div class="container">
-          <h2 class="study__title underline title">Где учился</h2>
-          <div class="study__wrapper row justify-content-between">
-            <div class="study__info col-12 col-md-6">
-              <h3 class="study__subtitle">Самостоятельно</h3>
-              <p class="study__text">
-                Изначально начал изучать Web разработку просматривая различные видео уроки на Youtube. Повторял все этапы верстки по видео параллельно
-                изучая различную документацию и справочники по HTML, CSS и JavaScript.
-                <br />Также проходил различные бесплатные тренажеры, например на сайте
-                <a target="_blank" href="https://htmlacademy.ru/">https://htmlacademy.ru/</a> или
-                <a target="_blank" href="https://praktikum.yandex.ru/">https://praktikum.yandex.ru/</a> , но спустя какое то время решил найти платные
-                курсы по Web разработке.
-              </p>
-              <h3 class="study__subtitle">Курсы</h3>
-              <p class="study__text">
-                Закончил восьминедельный интенсивный курс по WEB разработке “Web Start” от онлайн-школы Glo Academy.
-                <br />На курсе было выполнено 2 учебных проекта. Защитил сложный уровень диплома Вот ссылка egaiviktor.ru/Universal <br />Закончил
-                курс с отличием заняв 1 место среди всех учащийся на своем потоке. <br />Получил большой опыт в верстке, узнал много нового и
-                появилось еще большее желание продолжать учиться и осваивать новые технологии. В дальнейшем хочу пройти курс по JavaScript и
-                WordPress.
-              </p>
-            </div>
-            <!-- /.study__info -->
-            <div class="study__image col-12 col-md-6 col-lg-5">
-              <img class="study__image-item" src="img/sertificate.png" alt="сертификат за первое место" />
-            </div>
-            <!-- /.study__image -->
-          </div>
-          <!-- /.study__wrapper -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <section class="portfolio" id="portfolio">
-        <div class="container">
-          <h2 class="portfolio__title title underline">Мои работы</h2>
-          <!-- Slider main container -->
-          <div class="portfolio__swiper swiper-container col-12">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="portfolio__slide portfolio__slide--active swiper-slide" data-target="#content-1">
-                <img class="portfolio__slide-image" src="img/slide-small-1.jpg" alt="Universal" />
-              </div>
-              <!-- /.portfolio__slide -->
-              <div class="portfolio__slide swiper-slide" data-target="#content-2">
-                <img class="portfolio__slide-image" src="img/slide-small-2.jpg" alt="Best Touк Plan" />
-              </div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <button class="portfolio__button portfolio__button-prev"></button>
-            <button class="portfolio__button portfolio__button-next"></button>
-          </div>
-          <!-- /.swiper__container -->
-          <div class="portfolio__content col-12">
-            <div class="portfolio__content-item portfolio__content-item--active" id="content-1">
-              <img class="portfolio__content-image" src="img/slide-1.jpg" alt="Universal" />
-              <div class="portfolio__content-info row">
-                <div class="portfolio__content-description col-lg-3 col-md-4">
-                  <h3 class="portfolio__content-title">Клиент</h3>
-                  <span class="portfolio__content-text">Дипломный проект</span>
-                  <h3 class="portfolio__content-title">Ссылка</h3>
-                  <a class="portfolio__content-link" href="https://egaiviktor.ru/Universal/" target="_blank">https://egaiviktor.ru/Universal/</a>
-                </div>
-                <!-- /.portfolio__content-description -->
-                <div class="portfolio__content-block col-lg-9 col-md-8">
-                  <h3 class="portfolio__content-title">Описание</h3>
-                  <p class="portfolio__content-text">
-                    Был выполнен дипломный проект сложного уровня со сроком в 9 дней. Проект очень интересный. Адаптивной версии в макете не было.
-                    Весь адаптив был сделан мною самостоятельно. Были использаны все навыки приобретенные на курсе. Сайт полностью рабочий, все формы
-                    работают и проходят валидацию. Имеются ховер эффекты на всех активных элементах и плавная прокрутка по якорным ссылкам.
-                    <br />
-                    Самое сложное для меня был блок с карточками-статьями на главной странице. Нужно было заранее продумать как будут вести себя
-                    элементы на планшетах и мобильных устройствах.
-                  </p>
-                </div>
-                <!-- /.portfolio__content-block -->
-              </div>
-              <!-- /.portfolio__content-info -->
-            </div>
-            <!-- /.portfolio__content-item -->
-            <div class="portfolio__content-item" id="content-2">
-              <img class="portfolio__content-image" src="img/slide-2.jpg" alt="Unirersal" />
-              <div class="portfolio__content-info row">
-                <div class="portfolio__content-description col-md-3">
-                  <h3 class="portfolio__content-title">Клиент</h3>
-                  <span class="portfolio__content-text">Учебный проект </span>
-                  <h3 class="portfolio__content-title">Ссылка</h3>
-                  <a class="portfolio__content-link" href="https://egaiviktor.ru/tour-plan/" target="_blank">https://egaiviktor.ru/tour-plan/</a>
-                </div>
-                <!-- /.portfolio__content-description -->
-                <div class="portfolio__content-block col-md-9">
-                  <h3 class="portfolio__content-title">Описание</h3>
-                  <p class="portfolio__content-text">
-                    Учебный проект от Glo Academy на тему "Бронирование отелей". Данный проект был реализован по видео урокам из курса.
-                    <br />
-                    Во время верстки познакомился с новыми, на тот момент для меня незнакомыми технологиями, например: подключение гео-карты от Google
-                    и Яндекс, система сеток и впервые использовал анимацию на сайте.
-                    <br />
-                    Самым сложным для меня была верстка подвала, так как по ТЗ данная секцию должна быть стилизована с помощью grid-ов.
-                  </p>
-                </div>
-                <!-- /.portfolio__content-block -->
-              </div>
-              <!-- /.portfolio__content-info -->
-            </div>
-            <!-- /.portfolio__content-item -->
-          </div>
-          <!-- /.portfolio__content -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <section class="contacts">
-        <div class="container">
-          <h2 class="contacts__title title underline">Как со мной связаться</h2>
-          <div class="contact__wrapper row">
-            <div class="contacts__info col-12 col-md-6">
-              <h4 class="contacts__name">Телефон</h4>
-              <a class="contacts__link" href="tel:+79954168652">+7 (995) 416-86-52</a>
-            </div>
-            <!-- /.contacts__info -->
-            <div class="contacts__info col-12 col-md-6">
-              <h4 class="contacts__name">Социальные сети</h4>
-              <a class="contacts__social-link" href="https://vk.com/viktor.egai" target="_blank">
-                <img class="contacts__social-icon" src="img/vk.png" alt="Вконтакте" />
-              </a>
-              <a class="contacts__social-link" href="https://www.instagram.com/viktor.egai/" target="_blank">
-                <img class="contacts__social-icon" src="img/inst.png" alt="Instagram" />
-              </a>
-              <a class="contacts__social-link" href="https://wa.me/79954168652" target="_blank">
-                <img class="contacts__social-icon" src="img/whatsapp.png" alt="Whatsapp" />
-              </a>
-              <a class="contacts__social-link" href="https://t.me/bboyviki" target="_blank">
-                <img class="contacts__social-icon" src="img/tg.png" alt="Telegram" />
-              </a>
-            </div>
-            <!-- /.contacts__info -->
-            <div class="contacts__info col-12 col-md-6">
-              <h4 class="contacts__name">Электронная почта</h4>
-              <a class="contacts__link" href="mailto:egai.viktor94@gmail.com">egai.viktor94@gmail.com</a>
-            </div>
-            <!-- /.contacts__info -->
-          </div>
-          <!-- /.contact__wrapper -->
-        </div>
-        <!-- /.container -->
-      </section>
-    </main>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Roboto+Slab:wght@700;900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.min.css" />
+		<title>Егай Виктор - верстка сайтов</title>
+	</head>
+	<body>
+		<main>
+			<section class="main">
+				<div class="container">
+					<div class="header d-flex justify-content-between align-items-center">
+						<a class="header__link col-4 col-md-3 col-lg-2" href="#"><img class="header__logo" src="img/logo.png" alt="лого" /></a>
+						<nav class="header__nav nav col-md-9" id="navbar">
+							<ul class="nav__list justify-content-md-end">
+								<li class="nav__item">
+									<a class="nav__link" href="#skills">что я умею</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="#portfolio">портфолио</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="#study">где учился</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="#contacts"> контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__button header__button--mobile">
+							<span class="header__button-line"></span>
+							<span class="header__button-line"></span>
+							<span class="header__button-line"></span>
+						</div>
+					</div>
+					<!-- /.header__wrapper -->
+					<div class="main__wrapper d-flex justify-content-md-between flex-md-row flex-column-reverse">
+						<div class="main__info col-md-6 col-12 d-flex flex-column justify-content-md-end">
+							<h1 class="main__title">
+								Привет, мой дорогой посетиль. <br />
+								Меня зовут Виктор Егай. <br />
+								Я - верстальщик сайтов.
+							</h1>
+							<p class="main__text">
+								Эта страница создана специально для демонстрации моих навыков, проделанных работ и их описание, а также контактная информация для
+								связи со мной.
+							</p>
+						</div>
+						<!-- /.main__info -->
+						<div class="main__image col-md-6 col-12">
+							<img class="main__image-item" src="img/avatar.jpg" alt="Егай Виктор" />
+						</div>
+						<!-- /.main__image -->
+					</div>
+					<!-- /.main__wrapper -->
+				</div>
+				<!-- /.container -->
+			</section>
+			<section class="skills" id="skills">
+				<div class="container">
+					<h2 class="skills__title underline title">Что я умею</h2>
+					<div class="skills__wrapper d-flex flex-column flex-md-row">
+						<div class="skills__block col-md-6 col-12">
+							<h3 class="skills__subtitle">Верстка</h3>
+							<p class="skills__text">
+								Умею верстать сайты по макету из Figma, Adobe Photoshop, Adobe XD, Adobe Illustrator. <br />
+								Знаю как правильно экспортировать необходимую графику из макета без потери качества, как доставать шрифты и узнавать необходимые
+								отступы для дальнейшего использования в проекте.
+							</p>
+							<h3 class="skills__subtitle">Адаптивная и кроссбраузерная верстка</h3>
+							<p class="skills__text">
+								Я не создаю дизайн сайта, а работаю только с готовыми макетами предоставленные дизайнером, но в случае, когда в макете отсутствует
+								адаптивная версия сайта, могу сделать мобильную и планшетную версию самостоятельно. <br />
+								Всю свою верстку я проверяю на современных доступных мне экранах - большой монитор, ноутбук, планшет и смартфон. Также проверяю
+								верстку на всех популярных браузерах: Google Chrome, Mozilla Firefox, Yandex, Opera.
+							</p>
+							<h3 class="skills__subtitle">Pixel Perfect</h3>
+							<p class="skills__text">
+								Понимаю как важно верстать сайт точно по макету и при необходимости могу сверстать сайт пиксель в пиксель накладывая макет сайта на
+								сверстанную страницу используя расширение Pixel Perfect в браузере.
+							</p>
+							<h3 class="skills__subtitle">Семантика и валидация верстки</h3>
+							<p class="skills__text">
+								Делаю семантически правильную разметку. Знаю в каких случаях использовать, например, заголовки или параграф, а в каких не стоит.
+								Семантика важна, например, для поисковых систем. <br />Также моя верстка успешно проходит валидацию.
+							</p>
+							<h3 class="skills__subtitle">Стили</h3>
+							<p class="skills__text">
+								При написании стилей для сайта я пользуюсь препроцессором SASS. Благодаря ему получается писать стили быстро , качественно и это очень
+								удобно.
+								<br />Для каждого блока я создаю отдельный файл, что позволяет мне легче находить нужные стили для внесения каких либо изменений.
+								<br />Знаю методологию БЭМ, которой использую чаще всего в своей работе. Это удобно и без лишних заморочек. <br />Также при
+								необходимости могу добавить различную анимацию на готовый сайт, чтобы блок с текстом, например, вылетал слева или справа или добавить
+								эффект параллакса на фоновое изображение.
+							</p>
+						</div>
+						<!-- /.skills__block -->
+						<div class="skills__block col-md-6 col-12">
+							<h3 class="skills__subtitle">JavaScript</h3>
+							<p class="skills__text">
+								При помощи JavaScript делаю сайт интерактивным и живым. Добавляю различные анимации для элементов, например открытие и закрытие
+								модальных окон, переключение табов или “аккордеона”, всё это и многое другое.
+								<br />При написании кода использую современные стандарты ES6 и выше.
+							</p>
+							<h3 class="skills__subtitle">Работа с DOM</h3>
+							<p class="skills__text">
+								Могу получить любой элемент со страницы сайта и совершить с ним какие то манипуляции, например, добавить новые стили или повесить на
+								элемент слушатель событий: клик, наведение мыши и т.д. <br />
+								Также могу создать абсолютно новый элемент с помощью JS и добавить его в необходимое место на странице, например, при клике на кнопку
+								“загрузить еще” вывести новые данные на страницу из базы данных.
+							</p>
+							<h3 class="skills__subtitle">Работа с API, AJAX, JSON</h3>
+							<p class="skills__text">
+								Могу получить необходимые данные с удаленного сервера, как то их обработать и вывести на страницу, или наоборот получить данные,
+								которые ввел пользовать на странице и отправить их на сервер.
+							</p>
+							<h3 class="skills__subtitle">Gulp, WebPack</h3>
+							<p class="skills__text">
+								Отличные инструменты, которые используются для сборки проекта. Познакомился с данными сборщиками во время прохождения курсов. Пока что
+								не могу оценить весь потенциал данных инструментов, так как мало использовал их в работе.
+							</p>
+							<h3 class="skills__subtitle">Хостинг, домен, оптимизация, Git</h3>
+							<p class="skills__text">
+								Умею настраивать хостинг, привязывать домен и регистрировать SSL-сертификат.
+								<br />Готовый сайт проверяю на скорость загрузки с помощью сервиса Google PageSpeed Insights, благодаря которому можно узнать время
+								загрузки и причины замедления загрузки сайта. После выяснения причины - устраняю ее. Например: уменьшаю размеры картинок с помощью
+								Photoshop или сервиса TinyPNG благодаря чему скорость загрузки может значительно увеличиться. <br />Весь свой процесс работы я
+								сохраняю в репозитории на Github. Это очень удобно. Правда я еще не работал в команде, поэтому о Git знаю немного: как коммитить,
+								клонировать, создавать ветки и пушить коммиты на репозиторий.
+							</p>
+						</div>
+						<!-- /.skills__block -->
+					</div>
+					<!-- /.skills__wrapper -->
+				</div>
+				<!-- /.container -->
+			</section>
+			<section class="study" id="study">
+				<div class="container">
+					<h2 class="study__title underline title">Где учился</h2>
+					<div class="study__wrapper row justify-content-between">
+						<div class="study__info col-12 col-md-6">
+							<h3 class="study__subtitle">Самостоятельно</h3>
+							<p class="study__text">
+								Изначально начал изучать Web разработку просматривая различные видео уроки на Youtube. Повторял все этапы верстки по видео параллельно
+								изучая различную документацию и справочники по HTML, CSS и JavaScript.
+								<br />Также проходил различные бесплатные тренажеры, например на сайте
+								<a target="_blank" href="https://htmlacademy.ru/">https://htmlacademy.ru/</a> или
+								<a target="_blank" href="https://praktikum.yandex.ru/">https://praktikum.yandex.ru/,</a> но спустя какое-то время решил найти платные
+								курсы по Web разработке.
+							</p>
+							<h3 class="study__subtitle">Курсы</h3>
+							<p class="study__text">
+								Закончил восьминедельный интенсивный курс по верстке сайтов “Web Start” от онлайн-школы Glo Academy.
+								<br />На курсе было выполнено 2 учебных проекта. Защитил <a href="http://egaiviktor.ru/Universal">сложный уровень диплома </a>
+								<br />Закончил курс с отличием заняв 1 место среди всех учащийся на своем потоке. <br />Получил большой опыт в верстке, узнал много
+								нового и появилось еще большее желание продолжать учиться и осваивать новые технологии.
+							</p>
+							<p class="study__text">
+								Закончил девятинедельный интенсивный курс по JavaScript от онлайн-школы Glo Academy.
+								<br />
+								До прохождения курса никогда самостоятельно не писал код, но за время курса получил большой багаж знаний, было очень много практики и
+								теории.
+								<br />
+								За время всего курса написал: калькулятор личного бюджета, todo лист, преддимполный проект и дипломный проект сложного уровня с
+								панелью администратора.
+								<br />
+								По результатам пройденного курса вошел в ТОП лучших учеников потока и занял 3 место.
+							</p>
+						</div>
+						<!-- /.study__info -->
+						<div class="study__image col-12 col-md-6 col-lg-5">
+							<img class="study__image-item" src="img/sertificate.jpg" alt="Лучший студент курса веб-старт" />
+							<img class="study__image-item" src="img/js.png" alt="третье место по успеваемости на курсе javascript" />
+						</div>
+						<!-- /.study__image -->
+					</div>
+					<!-- /.study__wrapper -->
+				</div>
+				<!-- /.container -->
+			</section>
+			<section class="portfolio" id="portfolio">
+				<div class="container">
+					<h2 class="portfolio__title title underline">Мои работы</h2>
+					<!-- Slider main container -->
+					<div class="portfolio__swiper swiper-container col-12">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="portfolio__slide portfolio__slide--active swiper-slide" data-target="#content-1">
+								<img class="portfolio__slide-image" src="img/slide-small-1.jpg" alt="Universal" />
+							</div>
+							<!-- /.portfolio__slide -->
+							<div class="portfolio__slide swiper-slide" data-target="#content-2">
+								<img class="portfolio__slide-image" src="img/slide-small-2.jpg" alt="Best Tour Plan" />
+							</div>
+							<div class="portfolio__slide swiper-slide" data-target="#content-3">
+								<img class="portfolio__slide-image" src="img/slide-small-3.jpg" alt="Best Touк Plan" />
+							</div>
+							<div class="portfolio__slide swiper-slide" data-target="#content-4">
+								<img class="portfolio__slide-image" src="img/slide-small-4.jpg" alt="Best Touк Plan" />
+							</div>
+							<div class="portfolio__slide swiper-slide" data-target="#content-5">
+								<img class="portfolio__slide-image" src="img/slide-small-5.jpg" alt="Best Touк Plan" />
+							</div>
+							<div class="portfolio__slide swiper-slide" data-target="#content-6">
+								<img class="portfolio__slide-image" src="img/slide-small-6.jpg" alt="Best Touк Plan" />
+							</div>
+						</div>
+						<!-- If we need navigation buttons -->
+						<button class="portfolio__button portfolio__button-prev"></button>
+						<button class="portfolio__button portfolio__button-next"></button>
+					</div>
+					<!-- /.swiper__container -->
+					<div class="portfolio__content col-12">
+						<div class="portfolio__content-item portfolio__content-item--active" id="content-1">
+							<img class="portfolio__content-image" src="img/slide-1.jpg" alt="Universal" />
+							<div class="portfolio__content-info row">
+								<div class="portfolio__content-description col-lg-3 col-md-4">
+									<h3 class="portfolio__content-title">Клиент</h3>
+									<span class="portfolio__content-text">Дипломный проект</span>
+									<h3 class="portfolio__content-title">Ссылка</h3>
+									<a class="portfolio__content-link" href="https://egaiviktor.ru/Universal/" target="_blank">https://egaiviktor.ru/universal/</a>
+									<a class="portfolio__content-link" href="https://github.com/ViktorEgai/universal" target="_blank"
+										>https://github.com/ViktorEgai/universal</a
+									>
+								</div>
+								<!-- /.portfolio__content-description -->
+								<div class="portfolio__content-block col-lg-9 col-md-8">
+									<h3 class="portfolio__content-title">Описание</h3>
+									<p class="portfolio__content-text">
+										Был выполнен дипломный проект сложного уровня со сроком в 9 дней. Проект очень интересный. Адаптивной версии в макете не было.
+										Весь адаптив был сделан мною самостоятельно. Были использованы все навыки приобретенные на курсе. Сайт полностью рабочий, все
+										формы работают и проходят валидацию. Имеются ховер эффекты на всех активных элементах и плавная прокрутка по якорным ссылкам.
+										<br />
+										Самое сложное для меня был блок с карточками-статьями на главной странице. Нужно было заранее продумать как будут вести себя
+										элементы на планшетах и мобильных устройствах.
+									</p>
+								</div>
+								<!-- /.portfolio__content-block -->
+							</div>
+							<!-- /.portfolio__content-info -->
+						</div>
+						<!-- /.portfolio__content-item -->
+						<div class="portfolio__content-item" id="content-2">
+							<img class="portfolio__content-image" src="img/slide-2.jpg" alt="Unirersal" />
+							<div class="portfolio__content-info row">
+								<div class="portfolio__content-description col-md-3">
+									<h3 class="portfolio__content-title">Клиент</h3>
+									<span class="portfolio__content-text">Учебный проект </span>
+									<h3 class="portfolio__content-title">Ссылка</h3>
+									<a class="portfolio__content-link" href="https://egaiviktor.ru/tour-plan/" target="_blank">https://egaiviktor.ru/tour-plan/</a>
+									<a class="portfolio__content-link" href="https://github.com/ViktorEgai/js-calculator/tree/dev" target="_blank"
+										>https://github.com/ViktorEgai/tour-plan</a
+									>
+								</div>
+								<!-- /.portfolio__content-description -->
+								<div class="portfolio__content-block col-md-9">
+									<h3 class="portfolio__content-title">Описание</h3>
+									<p class="portfolio__content-text">
+										Учебный проект от Glo Academy на тему "Бронирование отелей". Данный проект был реализован по видео урокам из курса.
+										<br />
+										Во время верстки познакомился с новыми, на тот момент для меня незнакомыми технологиями, например: подключение гео-карты от Google
+										и Яндекс, система сеток и впервые использовал анимацию на сайте.
+										<br />
+										Самым сложным для меня была верстка подвала, так как по ТЗ данная секцию должна быть стилизована с помощью grid-ов.
+									</p>
+								</div>
+								<!-- /.portfolio__content-block -->
+							</div>
+							<!-- /.portfolio__content-info -->
+						</div>
+						<!-- /.portfolio__content-item -->
+						<div class="portfolio__content-item" id="content-3">
+							<img class="portfolio__content-image" src="img/slide-3.jpg" alt="Unirersal" />
+							<div class="portfolio__content-info row">
+								<div class="portfolio__content-description col-md-3">
+									<h3 class="portfolio__content-title">Клиент</h3>
+									<span class="portfolio__content-text">Учебный проект </span>
+									<h3 class="portfolio__content-title">Ссылка</h3>
+									<a class="portfolio__content-link" href="https://egaiviktor.ru/3d-glo/" target="_blank">https://egaiviktor.ru/3d-glo/</a>
+									<a class="portfolio__content-link" href="https://github.com/ViktorEgai/3d-glo" target="_blank"
+										>https://github.com/ViktorEgai/3d-glo</a
+									>
+								</div>
+								<!-- /.portfolio__content-description -->
+								<div class="portfolio__content-block col-md-9">
+									<h3 class="portfolio__content-title">Описание</h3>
+									<p class="portfolio__content-text">
+										Преддипломный проект курса по JS. Проект был выполнен по видео урокам из курса. Была дана готовая верстка со всеми необходимыми
+										файлами.
+										<br />
+										За время прохождения курса в данном проекте были реализованы: слайдер, валидация формы, калькулятор, счетчик обратного отсчета
+										времени, табы, плавный переход по якорям.
+									</p>
+								</div>
+								<!-- /.portfolio__content-block -->
+							</div>
+							<!-- /.portfolio__content-info -->
+						</div>
+						<!-- /.portfolio__content-item -->
+						<div class="portfolio__content-item" id="content-4">
+							<img class="portfolio__content-image" src="img/slide-4.jpg" alt="Unirersal" />
+							<div class="portfolio__content-info row">
+								<div class="portfolio__content-description col-md-3">
+									<h3 class="portfolio__content-title">Клиент</h3>
+									<span class="portfolio__content-text">Диплосный проект </span>
+									<h3 class="portfolio__content-title">Ссылка</h3>
+									<a class="portfolio__content-link" href="https://egaiviktor.ru/relax-live/" target="_blank">https://egaiviktor.ru/relax-live/</a>
+									<a class="portfolio__content-link" href="https://github.com/ViktorEgai/JsRelaxLive" target="_blank"
+										>https://github.com/ViktorEgai/JsRelaxLive</a
+									>
+								</div>
+								<!-- /.portfolio__content-description -->
+								<div class="portfolio__content-block col-md-9">
+									<h3 class="portfolio__content-title">Описание</h3>
+									<p class="portfolio__content-text">
+										Дипломный проект сложного уровня курса по JavaScript. Была дана верстка со всеми необходимыми файлами, правда пришлось не мало
+										повозиться и делать правки в верстке для корректного отображения всего содержимого.
+										<br />
+										В данном проекте были применены все навыки, полученные за все время прохождения курса. Большое количество слайдеров, валидация
+										форм, табы, карусели в декстопной и мобильной версии сайта.
+										<br />
+										Также присутствует панель администратора, в котором реализовано отображение данных, возможность их редактирования, удаления и
+										добавления новых данных через REST api.
+										<br />
+									</p>
+								</div>
+								<!-- /.portfolio__content-block -->
+							</div>
+							<!-- /.portfolio__content-info -->
+						</div>
+						<!-- /.portfolio__content-item -->
+						<div class="portfolio__content-item" id="content-5">
+							<img class="portfolio__content-image" src="img/slide-5.jpg" alt="Unirersal" />
+							<div class="portfolio__content-info row">
+								<div class="portfolio__content-description col-md-3">
+									<h3 class="portfolio__content-title">Клиент</h3>
+									<span class="portfolio__content-text">Учебный проект </span>
+									<h3 class="portfolio__content-title">Ссылка</h3>
+									<a class="portfolio__content-link" href="https://egaiviktor.ru/todo/" target="_blank">https://egaiviktor.ru/todo/</a>
+									<a class="portfolio__content-link" href="https://github.com/ViktorEgai/todoList" target="_blank"
+										>https://github.com/ViktorEgai/todoList</a
+									>
+								</div>
+								<!-- /.portfolio__content-description -->
+								<div class="portfolio__content-block col-md-9">
+									<h3 class="portfolio__content-title">Описание</h3>
+									<p class="portfolio__content-text">
+										Учебный проект курса по JS "todo лист". Данный проект был реализован по видео урокам из курса.
+										<br />
+										Весь скрипт написан в стиле ООП. Анимации элементов добавлял самостоятельно. Все введенные данные сохраняются в local storage, что
+										позволяет управлять списком дел в любое время, не переживая, что данные удаляться при закрытии страницы.
+									</p>
+								</div>
+								<!-- /.portfolio__content-block -->
+							</div>
+							<!-- /.portfolio__content-info -->
+						</div>
+						<!-- /.portfolio__content-item -->
+						<div class="portfolio__content-item" id="content-6">
+							<img class="portfolio__content-image" src="img/slide-6.jpg" alt="Unirersal" />
+							<div class="portfolio__content-info row">
+								<div class="portfolio__content-description col-md-3">
+									<h3 class="portfolio__content-title">Клиент</h3>
+									<span class="portfolio__content-text">Учебный проект </span>
+									<h3 class="portfolio__content-title">Ссылка</h3>
+									<a class="portfolio__content-link" href="https://egaiviktor.ru/budget/" target="_blank">https://egaiviktor.ru/budget/</a>
+									<a class="portfolio__content-link" href="https://github.com/ViktorEgai/js-calculator/tree/dev" target="_blank"
+										>https://github.com/ViktorEgai/js-calculator/tree/dev</a
+									>
+								</div>
+								<!-- /.portfolio__content-description -->
+								<div class="portfolio__content-block col-md-9">
+									<h3 class="portfolio__content-title">Описание</h3>
+									<p class="portfolio__content-text">
+										Учебный проект курса по JS "Калькулятоп личного бюджета". Данный проект был реализован по видео урокам из курса.
+										<br />
+										Калькулятор написан в стиле ООП. Все данные, введенный пользователям, сохраняются в local storage, что позволяет сохраненные
+										результаты подсчетов при следующем открытии калькулятора.
+									</p>
+								</div>
+								<!-- /.portfolio__content-block -->
+							</div>
+							<!-- /.portfolio__content-info -->
+						</div>
+						<!-- /.portfolio__content-item -->
+					</div>
+					<!-- /.portfolio__content -->
+				</div>
+				<!-- /.container -->
+			</section>
+			<section class="contacts" id="contacts">
+				<div class="container">
+					<h2 class="contacts__title title underline">Как со мной связаться</h2>
+					<div class="contacts__wrapper row">
+						<div class="contacts__info col-12 col-md-6">
+							<h4 class="contacts__name">Телефон</h4>
+							<a class="contacts__link" href="tel:+79954168652">+7 (995) 416-86-52</a>
+						</div>
+						<!-- /.contacts__info -->
+						<div class="contacts__info col-12 col-md-6">
+							<h4 class="contacts__name">Социальные сети</h4>
+							<a class="contacts__social-link" href="https://vk.com/viktor.egai" target="_blank">
+								<img class="contacts__social-icon" src="img/vk.png" alt="Вконтакте" />
+							</a>
+							<a class="contacts__social-link" href="https://www.instagram.com/viktor.egai/" target="_blank">
+								<img class="contacts__social-icon" src="img/inst.png" alt="Instagram" />
+							</a>
+							<a class="contacts__social-link" href="https://wa.me/79954168652" target="_blank">
+								<img class="contacts__social-icon" src="img/whatsapp.png" alt="Whatsapp" />
+							</a>
+							<a class="contacts__social-link" href="https://t.me/viktor_egai" target="_blank">
+								<img class="contacts__social-icon" src="img/tg.png" alt="Telegram" />
+							</a>
+						</div>
+						<!-- /.contacts__info -->
+						<div class="contacts__info col-12 col-md-6">
+							<h4 class="contacts__name">Электронная почта</h4>
+							<a class="contacts__link" href="mailto:egai.viktor94@gmail.com">egai.viktor94@gmail.com</a>
+						</div>
+						<!-- /.contacts__info -->
+					</div>
+					<!-- /.contact__wrapper -->
+				</div>
+				<!-- /.container -->
+				<a href="#" class="to-top" id="toTop"> <img src="img/arrowup.png" alt="arrow" class="to-top__icon" loading="lazy" /> </a>
+			</section>
+		</main>
+		<script src="js/libs.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>

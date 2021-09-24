@@ -50,3 +50,15 @@ const swiper = new Swiper('.swiper-container', {
   $(document).scroll(function(){
     $(".nav__list").removeClass("nav__list--visible")
   });
+
+  // наверх
+  var toTop=$(".to-top");
+  $(window).scroll(function(){
+    if($(this).scrollTop()>200){
+      toTop.addClass("to-top--visible")
+    }else{
+      toTop.removeClass("to-top--visible")}
+    });
+  $(".to-top").click(function(){$('body,html').animate({scrollTop:0},400)});
+
+  $("#navbar").on("click","a",function(event){event.preventDefault();var id=$(this).attr('href'),top=$(id).offset().top;$('body,html').animate({scrollTop:top},500)});
